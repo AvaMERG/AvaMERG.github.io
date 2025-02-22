@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="AvaMERG">
+  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Towards Multimodal Empathetic Response Generation:A Rich Text-Speech-Vision Avatar-based Benchmark</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/icon.jpeg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Towards Multimodal Empathetic Response Generation:A Rich Text-Speech-Vision Avatar-based Benchmark</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=hVxOSQsAAAAJ">Han Zhang</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?hl=zh-CN&user=aQfQTI0AAAAJ">Zixiang Meng</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://github.com/Eurekaleo/">Meng Luo</a><sup>3</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.scopus.com/authid/detail.uri?authorId=26636998100">Hong Han</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://liziliao.github.io/">Lizi Liao</a><sup>4</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=ilSYpW0AAAAJ&hl=en">Erik Cambria</a><sup>5</sup>,</span>
+            <span class="author-block">
+              <a href="http://haofei.vip/">Hao Fei</a><sup>3,*</sup>
+            </span>
+          </div>
+
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Xidian University</span> &nbsp;
+            <span class="author-block"><sup>2</sup>Wuhan University</span> &nbsp;
+            <span class="author-block"><sup>3</sup>National University of Singapore</span><br>
+            <span class="author-block"><sup>4</sup>Singapore Management University</span> &nbsp;
+            <span class="author-block"><sup>5</sup>Nanyang Technological University</span><br>
+          </div>
+          <br>
+          <span class="author-block" style="font-size: 20px;">
+              Accepted by WWW 2025 <span style="color: red; font-weight: bold;">(Poster)</span>
+          </span><br>
+          <span class="author-block" style="font-size: 20px;">(* Correspondence)</span>
+          <br><br>
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2502.04976"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/AvaMERG/AvaMERG"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+
+              <!-- Dataset Link. -->
+              <span class="link-block">
+               <a href="https://github.com/PanoSent/PanoSent"
+                 class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>                
+              </span>
+              
+
+<!--              <span class="link-block">-->
+<!--                <a href="https://arxiv.org/xxxxxx"-->
+<!--                   class="external-link button is-normal is-rounded is-dark">-->
+<!--                  <span class="icon">-->
+<!--                      <i class="ai ai-arxiv"></i>-->
+<!--                  </span>-->
+<!--                  <span>arXiv</span>-->
+<!--                </a>-->
+<!--              </span>-->
+              
+              <!-- Video Link. -->
+<!--               <span class="link-block">
+                <a href="https://www.youtube.com/xxxxxxx"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a> -->
+
+              </span>
+              <!-- Poster Link. -->
+              <span class="link-block">
+              <a href="./static/media/xxxxx.pdf" class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                    <svg class="svg-inline--fa fa-chalkboard fa-w-20" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chalkboard" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M96 64h448v352h64V40c0-22.06-17.94-40-40-40H72C49.94 0 32 17.94 32 40v376h64V64zm528 384H480v-64H288v64H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h608c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z"></path></svg><!-- <i class="fas fa-chalkboard"></i> Font Awesome fontawesome.com -->
+                </span>
+                <span>Poster</span>
+              </a>
+            </span>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--<section class="hero is-light is-small">-->
+<!--  <div class="hero-body">-->
+<!--    <div class="container">-->
+<!--      <div id="results-carousel" class="carousel results-carousel">-->
+<!--        <div class="item item-steve">-->
+<!--          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">-->
+<!--            <source src="./static/videos/steve.mp4"-->
+<!--                    type="video/mp4">-->
+<!--          </video>-->
+<!--        </div>-->
+<!--        <div class="item item-chair-tp">-->
+<!--          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">-->
+<!--            <source src="./static/videos/chair-tp.mp4"-->
+<!--                    type="video/mp4">-->
+<!--          </video>-->
+<!--        </div>-->
+<!--        <div class="item item-shiba">-->
+<!--          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">-->
+<!--            <source src="./static/videos/shiba.mp4"-->
+<!--                    type="video/mp4">-->
+<!--          </video>-->
+<!--        </div>-->
+<!--        <div class="item item-fullbody">-->
+<!--          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">-->
+<!--            <source src="./static/videos/fullbody.mp4"-->
+<!--                    type="video/mp4">-->
+<!--          </video>-->
+<!--        </div>-->
+<!--        <div class="item item-blueshirt">-->
+<!--          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">-->
+<!--            <source src="./static/videos/blueshirt.mp4"-->
+<!--                    type="video/mp4">-->
+<!--          </video>-->
+<!--        </div>-->
+<!--        <div class="item item-mask">-->
+<!--          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">-->
+<!--            <source src="./static/videos/mask.mp4"-->
+<!--                    type="video/mp4">-->
+<!--          </video>-->
+<!--        </div>-->
+<!--        <div class="item item-coffee">-->
+<!--          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">-->
+<!--            <source src="./static/videos/coffee.mp4"-->
+<!--                    type="video/mp4">-->
+<!--          </video>-->
+<!--        </div>-->
+<!--        <div class="item item-toby">-->
+<!--          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">-->
+<!--            <source src="./static/videos/toby2.mp4"-->
+<!--                    type="video/mp4">-->
+<!--          </video>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+        <p>
+            Empathetic Response Generation (ERG) is one of the key tasks of the affective computing area, which aims to produce emotionally nuanced and compassionate responses to user’s queries. However, existing ERG research is predominantly confined to the singleton text modality, limiting its effectiveness since human emotions are inherently conveyed through multiple modalities. To combat this, we introduce an avatar-based Multimodal ERG (MERG) task, entailing rich text, speech, and facial vision information. We first present a large-scale high-quality benchmark dataset, AvaMERG, which extends traditional text ERG by incorporating authentic human speech audio and dynamic talking-face avatar videos, encompassing a diverse range of avatar profiles and broadly covering various topics of real-world scenarios. Further, we deliberately tailor a system, named Empatheia, for MERG. Built upon a Multimodal Large Language Model (MLLM) with multimodal encoder, speech and avatar generators, Empatheia performs end-to-end MERG, with Chain-of-Empathetic reasoning mechanism integrated for enhanced empathy understanding and reasoning. Finally, we devise a list of empathetic-enhanced tuning strategies, strengthening the capabilities of emotional accuracy and content, avatar-profile consistency across modalities. Experimental results on AvaMERG data demonstrate that Empatheia consistently shows superior performance than baseline methods on both textual ERG and MERG. 
+        </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+<section class="section" style="margin-top: -10px">
+  <div class="container is-max-desktop">
+    <!-- Combine all sections into one -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+
+        <!-- Task Definition -->
+        <h2 class="title is-3" style="margin-top: -10px;font-size: 1.8em">1. Task Definition</h2>
+        <p style="text-align: justify">
+          Given a multimodal dialogue <em>Ď</em> = (<em>Q<sub>i</sub></em> | <em>D<sub>&lt;i</sub></em>), where <em>Q<sub>i</sub></em> denotes the current <em>i</em>-th round multimodal user query input, and <em>D<sub>&lt;i</sub></em> represents the dialogue history, MERG task is to produce a contextually appropriate and empathetic multimodal response <em>R<sub>i</sub></em> for <em>Q<sub>i</sub></em>, with each utterance (i.e., <em>Q<sub>i</sub></em> and <em>R<sub>i</sub></em>) consisting of three content-synchronized modalities: text <em>t<sub>i</sub></em>, speech audio <em>s<sub>i</sub></em>, and talking-face video <em>v<sub>i</sub></em>, i.e., <em>Q<sub>i</sub></em>/<em>R<sub>i</sub></em> = (<em>t<sup>q/r</sup><sub>i</sub></em>, <em>s<sup>q/r</sup><sub>i</sub></em>, <em>v<sup>q/r</sup><sub>i</sub></em>). This results in <em>D<sub>i</sub></em> = {(<em>Q<sub>1</sub></em>, <em>R<sub>1</sub></em>), ..., (<em>Q<sub>i</sub></em>, <em>R<sub>i</sub></em>)}, a total of <em>i</em> round of a multimodal dialogue, includes the user query <em>Q<sub>i</sub></em> and model response <em>R<sub>i</sub></em>. The task requires maintaining coherence and emotional congruence across these modalities to ensure that the generated response <em>R<sub>i</sub></em> well aligns with the emotional cues in user input and also context.
+        </p>
+        <br>
+        <div class="publication-image">
+          <img width="80%" src="./static/images/intro.png">
+        </div>
+        <br>
+
+        <!-- AvaMERG Dataset -->
+        <h2 class="title is-3" style="margin-top: -10px;font-size: 1.8em">2. AvaMERG: A Avatar-based Multimodal Empathetic Response Generation Dataset</h2>
+        <p style="text-align: justify">
+          We introduce AvaMERG, a large-scale high-quality benchmark dataset for MERG, which extends traditional text-based ERG by integrating authentic human speech audio and dynamic talking-face avatar videos. 
+        </p>
+        <br>
+        <div class="publication-image">
+          <img width="80%" src="./static/images/statistics.png">
+          <img width="80%" src="./static/images/distribution.png">
+        </div>
+        <br>
+
+        <!-- Empatheia MLLM -->
+        <h2 class="title is-3" style="margin-top: -10px;font-size: 1.8em">3. Empatheia: MLLM for MERG</h2>
+        <p style="text-align: justify">
+          we present Empatheia, a benchmark system tailored for MERG. Based on a backbone LLM as the core reasoner, Empatheia leverages a multimodal encoder, speech generator, and talking-face avatar generator, forming an end-to-end system.
+        </p>
+        <br>
+        <div class="publication-image">
+          <img width="80%" src="./static/images/framework.png">
+        </div>
+        <br>
+
+        <h2 class="title is-3" style="margin-top: -10px;font-size: 1.4em">3.1 Chain-of-Empathy Reasoning</h2>
+        <p style="text-align: justify">
+          Inspired by Chain-of-Thought, we design a Chain-of-Empathy (CoE) reasoning mechanism. Specifically, we guide the LLM to think through the following progressive steps to gradually derive the final empathetic responses more accurately and more interpretably.
+        <br>
+
+        <div class="publication-image" style="text-align:left">
+          <b>▶ Step 1: Event scenario. Reflect on the event scenarios that arise from the ongoing dialogue.</b></div>
+        <div class="publication-image" style="text-align:left">
+          <b>▶ Step 2: User‘s emotion. Analyze both the implicit and explicit emotions conveyed by the user.</b></div>
+        <div class="publication-image" style="text-align:left">
+          <b>▶ Step-3. Emotion cause. Infer the underlying reasons for the user’s emotions.</b></div>
+        <div class="publication-image" style="text-align:left">
+          <b>▶ Step-4. Goal to response. Determine the goal of your response in this particular instance, such as alleviating anxiety, offering reassurance, or expressing understanding.</b></div>
+        <div class="publication-image" style="text-align:left">
+          <b>▶  Step-5. Generating empathetic response. Formulate a response that addresses the user’s emotions and situation, ensuring it reflects the reasoning from the previous steps. The output should be purely focused on providing a thoughtful and empathetic reply.</b>
+        </div>
+        <br>
+
+        <h2 class="title is-3" style="margin-top: -10px;font-size: 1.4em">3.2 Content Synchronizer and Style Disentangle modules</h2>
+        <p style="text-align: justify">
+          To ensure high-quality multimodal generation, we integrate the state-of-the-art StyleTTS2 and DreamTalk generators, addressing content synchronization and stylistic coherence through two modules—content synchronizer and style disentangler—before the generators, to maintain consistency in both content and style across modalities.dually derive the final empathetic responses more accurately and more interpretably.
+        <br>
+
+        <div class="publication-image">
+          <img width="80%" src="./static/images/modules.png">
+        </div>
+        <br>
+        
+        <h2 class="title is-3" style="margin-top: -10px;font-size: 1.4em">3.3 Empathetic-enhanced Training Strategy</h2>
+        <p style="text-align: justify">
+          With the above Empatheia model architecture, we now empower it with effective MERG capability via a series of training strategies.
+
+        <div class="publication-image">
+          <img width="100%" src="./static/images/training stragies.png">
+        </div>
+        <br>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Experiment -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3" style="margin-top: -10px">4. Experiment</h2>
+        <br>
+
+        <div class="publication-image" style="text-align:left">
+          <b>▶ Main results of Automatic Evaluation. </b>
+          <center><img width="80%" src="./static/images/result1.png"></center>
+          <center><img width="80%" src="./static/images/result2.png"></center>
+        </div>
+        <br>
+
+        <div class="publication-image" style="text-align:left">
+          <b>▶ Main results of Human Evaluation Results.</b>
+          <center><img width="80%" src="./static/images/result3.png"></center>
+        </div>
+        <br>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{zhang2025towards,
+      title={Towards multimodal empathetic response generation: A rich text-speech-vision avatar-based benchmark},
+      author={Zhang, Han and Meng, Zixiang and Luo, Meng and Han, Hong and Liao, Lizi and Cambria, Erik and Fei, Hao},
+      journal={arXiv preprint arXiv:2502.04976},
+      year={2025}
+    }
+
+</code></pre>
+  </div>
+</section>
+  
+<footer class="footer">
+  <div class="container">
+<!--    <div class="content has-text-centered">-->
+<!--      <a class="icon-link"-->
+<!--         href="./static/videos/nerfies_paper.pdf">-->
+<!--        <i class="fas fa-file-pdf"></i>-->
+<!--      </a>-->
+<!--      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>-->
+<!--        <i class="fab fa-github"></i>-->
+<!--      </a>-->
+<!--    </div>-->
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            The website template credit to <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>,
+            licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 License</a>.
+          </p>
+<!--          <p>-->
+<!--            This means you are free to borrow the <a href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,-->
+<!--            we just ask that you link back to this page in the footer.-->
+<!--            Please remember to remove the analytics code included in the header of the website which-->
+<!--            you do not want on your website.-->
+<!--          </p>-->
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
